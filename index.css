@@ -1,0 +1,151 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container
+
+{
+    width: 100vw;
+    position: relative;
+    overflow-x: hidden;
+    margin-top: 6rem;
+
+    
+}
+
+.nav-bar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+
+    box-shadow:0px 0px 0px 0px black;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(150deg, #f9f9f9, #d4dad6, #afbbb6, #8b9d9b, #698083, #49636f, #2c475c, #142b4e);
+
+    
+} 
+
+.navitems
+{
+    display: flex;
+    gap: 2.5rem;
+    padding-right: 4rem;
+    
+    
+}
+
+
+.navitems a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #d4dad6;
+}
+
+.navitems a:hover
+{
+
+transition: all 0.3s;
+transform: scale(1.2);
+outline: none;
+border-radius: 5px;
+border: none;
+color: rgb(209, 228, 127);
+}
+
+
+/* Active class  */
+
+.nav-bar.active
+{
+    transition: all 5s;
+    
+    
+    opacity: 0.9;
+    animation-name: change-color-anim;
+    animation-timing-function: ease-in-out;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes change-color-anim {
+	0%{
+        background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+
+	}
+	50%{
+        background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+	}
+    100%
+    {
+        background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+
+    }
+}
+
+p.active{
+    color: black;
+    font-weight: bold;
+}
+
+
+
+
+.secondbox
+{
+  display: flex;
+  width: 100vw;
+  justify-content: space-evenly;
+  margin: 50px;
+  padding-right: 50px;
+
+}
+
+
+.item{
+
+  background-color: rgb(250, 247, 247);
+  height: 210px;
+  width: 190px;
+
+  box-shadow: 0px 0px 1px green;
+  padding: 20px;
+
+
+}
+
+  
+
+  img 
+  {
+    padding-right: 20px;
+  }
+
+
+  
+.itembox
+{
+  display: flex;
+  
+  align-items: center;
+ justify-content: center;
+  background-color: rgb(187, 238, 173);
+  height: 30px;
+  width: auto;
+  border-radius: 5px;
+  margin-top: 20px;
+  p 
+{
+
+  font-weight: 900;
+}
+
+}
